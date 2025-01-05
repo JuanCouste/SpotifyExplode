@@ -18,6 +18,8 @@ public class Playlist
     [JsonPropertyName("description")]
     public string Description { get; set; } = default!;
 
+    public string Url => $"https://open.spotify.com/playlist/{Id}";
+
     [JsonPropertyName("images")]
     public List<Image> Images { get; set; } = [];
 

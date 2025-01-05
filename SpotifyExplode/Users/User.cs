@@ -14,6 +14,7 @@ public class User
 
     [JsonPropertyName("display_name")]
     public string DisplayName { get; set; } = default!;
+    public string Url => $"https://open.spotify.com/user/{Id}";
 
     [JsonPropertyName("followers")]
     public Follower Followers { get; set; } = default!;

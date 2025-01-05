@@ -13,7 +13,7 @@ public class Album
     [JsonPropertyName("id")]
     public AlbumId Id { get; set; }
 
-    public string Url => $"https://open.spotify.com/track/{Id}";
+    public string Url => $"https://open.spotify.com/album/{Id}";
 
     [JsonPropertyName("label")]
     public string Label { get; set; } = default!;
